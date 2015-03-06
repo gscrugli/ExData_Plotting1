@@ -1,8 +1,4 @@
 plot1 <- function(directory=getwd(),filename="household_power_consumption.txt") {
-        # load libraries
-        library(dplyr)
-        library(lattice)
-        library(ggplot2)
         # get file and directory
         my_file <- paste(directory,filename,sep="/")
         # read the first 5 rows to determine column classes
