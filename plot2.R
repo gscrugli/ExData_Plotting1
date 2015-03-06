@@ -20,6 +20,6 @@ plot2 <- function(directory=getwd(),filename="household_power_consumption.txt") 
         
         # Plot Histogram and write into file
         #png(file="plot2.png")
-        with(my_data,lines(DateTime,Global_active_power,ylab="Global Active Power (kilowatts)"))
+        with(my_data,plot(DateTime,Global_active_power,ylab="Global Active Power (kilowatts)", main=""))
         #dev.off()
 }
