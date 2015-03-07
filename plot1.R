@@ -18,7 +18,7 @@ plot1 <- function(directory=getwd(),filename="household_power_consumption.txt") 
         my_data <- my_data[my_data$Date==firstDate | my_data$Date==secondDate,]
         #print(str(my_data))
         # Plot Histogram and write into file
-        png(file="plot1.png")
+        png(file="plot1.png",width = 480, height = 480)
         with(my_data,hist(Global_active_power,xlab="Global Active Power (kilowatts)",col="red",main="Global Active Power"))
         dev.off()
 }

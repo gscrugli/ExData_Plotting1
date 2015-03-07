@@ -19,7 +19,7 @@ plot3 <- function(directory=getwd(),filename="household_power_consumption.txt") 
         #print(str(my_data))
         
         # Plot Histogram and write into file
-        png(file="plot3.png")
+        png(file="plot3.png",width = 480, height = 480)
         with(my_data,plot(DateTime,Sub_metering_1,type="n",xlab="",ylab=""))
         with(my_data,lines(DateTime,Sub_metering_1,type="l",col="black",xlab="",ylab=""))
         with(my_data,lines(DateTime,Sub_metering_2,type="l",col="red",xlab="",ylab=""))

@@ -19,7 +19,7 @@ plot4 <- function(directory=getwd(),filename="household_power_consumption.txt") 
         #print(str(my_data))
         
         # Plot Histogram and write into file
-        png(file="plot4.png")
+        png(file="plot4.png",width = 480, height = 480)
         # set Par mfrow/mfcol for multiple plots
         par(mfrow=c(2,2),mar=c(4,4,2,2))
         # draw 1st Plot
